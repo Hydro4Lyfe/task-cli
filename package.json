@@ -3,11 +3,18 @@
   "version": "1.0.0",
   "description": "a cli program that helps create markdown files in projects that will be used by an AI agent",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run --passWithNoTests",
-    "test:watch": "vitest"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "tsx src/cli/index.ts"
   },
+  "bin": {
+    "task": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

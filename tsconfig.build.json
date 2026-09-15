@@ -1,0 +1,6 @@
+{
+  // Build config: the same settings as tsconfig.json, minus the test files —
+  // `pnpm typecheck` still covers tests, but they must not ship in dist/.
+  "extends": "./tsconfig.json",
+  "exclude": ["src/**/*.test.ts", "src/test/**"]
+}
