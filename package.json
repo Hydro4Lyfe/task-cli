@@ -1,0 +1,26 @@
+{
+  "name": "task-cli",
+  "version": "1.0.0",
+  "description": "a cli program that helps create markdown files in projects that will be used by an AI agent",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@12.4.2",
+  "type": "module",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  }
+}
